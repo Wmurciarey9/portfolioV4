@@ -1,0 +1,61 @@
+.project {
+  display: flex;
+  align-items: center;
+
+  height: 500px;
+
+  .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin: 10px 0;
+      top: 0;
+    }
+    .skillsUsed {
+      margin-top: 10px;
+      height: 40px;
+
+      span {
+        font-size: 17px;
+        border-width: 3px;
+        border-style: solid;
+        border-image: linear-gradient(to bottom, rgb(93, 38, 183), rgba(0, 0, 0, 0)) 1 100%;
+        text-decoration: none;
+        padding: 5px 15px;
+        margin-right: 10px;
+      }
+    }
+
+    p {
+      height: 200px;
+    }
+
+    .buttons {
+      button {
+        padding: 10px 20px;
+        margin: 20px 10px 0 0;
+        background-image: linear-gradient(rgb(93, 38, 183), rgb(57, 117, 219));
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          scale: 1.2;
+        }
+      }
+    }
+  }
+  .right {
+    width: 50%;
+    .image {
+      width: 440px;
+      height: 350px;
+      object-fit: cover;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
