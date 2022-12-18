@@ -1,7 +1,8 @@
+@import "../../app.scss";
+
 .project {
   display: flex;
   align-items: center;
-
   height: 500px;
 
   .left {
@@ -56,6 +57,27 @@
       object-fit: cover;
       align-items: center;
       justify-content: center;
+    }
+  }
+
+  @include mobile {
+    .left {
+      h2 {
+        width: 100%;
+      }
+      .skillsUsed {
+        span {
+          font-size: 14px;
+          padding: 5px 10px;
+        }
+      }
+    }
+
+    .right {
+      .image {
+        width: 220px;
+        height: 175px;
+      }
     }
   }
 }

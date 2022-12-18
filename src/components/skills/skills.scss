@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .skills {
   background: rgb(52, 19, 117);
   background: linear-gradient(50deg, rgba(52, 19, 117, 1) 17%, rgba(52, 71, 189, 1) 72%);
@@ -13,7 +15,6 @@
     color: white;
     font-size: 40px;
     font-weight: 600;
-
     text-decoration: none;
     padding: 10px 0 0 0;
 
@@ -67,6 +68,24 @@
         scale: 1.2;
         transition: ease-in-out 0.05s;
       }
+    }
+  }
+
+  @include mobile {
+    span {
+      margin-left: 7%;
+      width: 30%;
+    }
+    .containerSkills {
+      display: grid;
+      grid-template-columns: 80px 80px 80px 80px;
+      grid-template-rows: 80px 80px;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      justify-items: stretch;
+      align-items: stretch;
+      margin: 0 7%;
+      margin-left: 0;
     }
   }
 }
