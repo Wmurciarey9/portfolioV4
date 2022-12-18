@@ -22,7 +22,10 @@ export const Projects = () => {
         img="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmV0ZmxpeHxlbnwwfHwwfHw%3D&w=1000&q=80"
         liveUrl=""
         gitHub=""
-        description="A booking app for business time management. Set appointments and control your work time more efficienly"
+        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+      been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+      galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text
+      of the printing and typesetting industry."
         techOne="React"
         techTwo="Saas"
         techThree="MongoDB"
