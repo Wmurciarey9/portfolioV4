@@ -92,4 +92,21 @@
       margin-left: 0;
     }
   }
+  @include tablet {
+    span {
+      margin-left: 7%;
+      width: 30%;
+    }
+    .containerSkills {
+      display: grid;
+      grid-template-columns: 80px 80px 80px 80px;
+      grid-template-rows: 80px 80px;
+      grid-column-gap: 3px;
+      grid-row-gap: 3px;
+      justify-items: stretch;
+      align-items: stretch;
+
+      margin-left: 0;
+    }
+  }
 }

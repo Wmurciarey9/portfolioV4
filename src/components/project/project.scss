@@ -21,6 +21,10 @@
         height: 100px;
         margin-top: 210px;
       }
+      @include tablet {
+        height: 100px;
+        margin-top: 210px;
+      }
 
       span {
         font-size: 17px;
@@ -37,6 +41,13 @@
       height: 200px;
 
       @include mobile {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      @include tablet {
         margin-top: 20px;
         width: 100%;
         height: auto;
@@ -60,6 +71,14 @@
         }
 
         @include mobile {
+          display: flex;
+          padding: 10px 10px;
+          margin: 20px 2px 0 0;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+        @include tablet {
           display: flex;
           padding: 10px 10px;
           margin: 20px 2px 0 0;
@@ -122,5 +141,50 @@
         height: 180px;
       }
     }
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+    .left {
+      width: 100%;
+      .skillsUsed {
+        display: grid;
+        grid-template-columns: 120px 120px;
+        grid-template-rows: 50px 50px;
+        grid-column-gap: 30px;
+        grid-row-gap: 2px;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          font-size: 14px;
+          padding: 5px 10px;
+          text-align: center;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      width: 90%;
+
+      .image {
+        position: relative;
+        top: 30px;
+        overflow: hidden;
+        width: 400px;
+        margin-top: 30px;
+        height: 180px;
+      }
+    }
+  }
+  @include laptop {
   }
 }

@@ -53,4 +53,8 @@
     height: 10vh;
     padding-top: 10px;
   }
+  @include tablet {
+    height: 10vh;
+    padding-top: 15px;
+  }
 }
