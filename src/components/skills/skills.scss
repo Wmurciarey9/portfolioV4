@@ -63,7 +63,7 @@
         padding: 10px;
 
         @include mobile {
-          font-size: 3rem;
+          font-size: 4rem;
         }
       }
 
@@ -82,14 +82,9 @@
     }
     .containerSkills {
       display: grid;
-      grid-template-columns: 80px 80px 80px 80px;
-      grid-template-rows: 80px 80px;
-      grid-column-gap: 3px;
-      grid-row-gap: 3px;
-      justify-items: stretch;
-      align-items: stretch;
-      margin: 0 7%;
-      margin-left: 0;
+      grid-template-columns: repeat(auto-fit, minmax(4em, 0rem));
+      gap: 20px;
+      justify-content: center;
     }
   }
   @include tablet {
@@ -99,14 +94,15 @@
     }
     .containerSkills {
       display: grid;
-      grid-template-columns: 80px 80px 80px 80px;
-      grid-template-rows: 80px 80px;
-      grid-column-gap: 3px;
-      grid-row-gap: 3px;
-      justify-items: stretch;
-      align-items: stretch;
-
-      margin-left: 0;
+      grid-template-columns: 90px 90px 90px 90px;
+      grid-template-rows: 90px 90px;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+    }
+  }
+  @include laptop {
+    span {
+      margin: 0 7%;
     }
   }
 }

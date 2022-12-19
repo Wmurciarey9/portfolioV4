@@ -19,4 +19,9 @@
     margin-top: 140px;
     margin-bottom: 140px;
   }
+  @include laptop {
+    margin: 0 7%;
+    margin-top: 140px;
+    margin-bottom: 140px;
+  }
 }

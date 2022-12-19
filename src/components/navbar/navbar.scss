@@ -6,6 +6,8 @@
   position: fixed;
   top: 0;
   z-index: 999;
+  height: 10vh;
+  padding-top: 15px;
 
   &.scrolled {
     background-color: white;
@@ -17,7 +19,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 30px;
-    height: 7vh;
+    // height: 7vh;
     .left {
       display: flex;
       img {
@@ -47,14 +49,5 @@
         }
       }
     }
-  }
-
-  @include mobile {
-    height: 10vh;
-    padding-top: 10px;
-  }
-  @include tablet {
-    height: 10vh;
-    padding-top: 15px;
   }
 }

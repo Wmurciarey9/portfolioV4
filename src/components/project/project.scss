@@ -9,6 +9,7 @@
     width: 50%;
     display: flex;
     flex-direction: column;
+    margin-right: 10px;
 
     h2 {
       margin: 10px 0;
@@ -19,11 +20,11 @@
       height: 40px;
       @include mobile {
         height: 100px;
-        margin-top: 210px;
+        margin-top: 230px;
       }
       @include tablet {
         height: 100px;
-        margin-top: 210px;
+        margin-top: 300px;
       }
 
       span {
@@ -54,6 +55,12 @@
 
         text-align: center;
       }
+      @include laptop {
+        margin-top: 10px;
+
+        width: 100%;
+        height: auto;
+      }
     }
 
     .buttons {
@@ -79,6 +86,14 @@
           align-items: center;
         }
         @include tablet {
+          display: flex;
+          padding: 10px 10px;
+          margin: 20px 2px 0 0;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+        @include laptop {
           display: flex;
           padding: 10px 10px;
           margin: 20px 2px 0 0;
@@ -128,7 +143,7 @@
 
     .right {
       display: flex;
-      width: 100%;
+      width: 90%;
       align-items: center;
       position: absolute;
 
@@ -136,9 +151,9 @@
         position: relative;
         top: 30px;
         overflow: hidden;
-        width: 360px;
+        width: 400px;
         margin-top: 30px;
-        height: 180px;
+        height: 200px;
       }
     }
   }
@@ -173,18 +188,43 @@
       display: flex;
       align-items: center;
       position: absolute;
-      width: 90%;
+      justify-content: center;
+      width: 86%;
 
       .image {
         position: relative;
-        top: 30px;
+        margin-top: 60px;
         overflow: hidden;
-        width: 400px;
-        margin-top: 30px;
-        height: 180px;
+        width: 600px;
+        height: 280px;
       }
     }
   }
   @include laptop {
+    height: auto;
+    margin-bottom: 70px;
+    .left {
+      margin-right: 10px;
+      .skillsUsed {
+        height: auto;
+        display: grid;
+        grid-template-columns: 120px 120px;
+        grid-template-rows: 50px 50px;
+        grid-column-gap: 30px;
+        grid-row-gap: 2px;
+        margin-bottom: 10px;
+
+        span {
+          text-align: center;
+        }
+      }
+    }
+
+    .right {
+      .image {
+        width: 100%;
+        height: 300px;
+      }
+    }
   }
 }
