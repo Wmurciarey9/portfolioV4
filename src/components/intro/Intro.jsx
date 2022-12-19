@@ -1,5 +1,6 @@
 import React from "react";
 import "./intro.scss";
+import { Link } from "react-router-dom";
 
 export const Intro = () => {
   return (
@@ -16,7 +17,9 @@ export const Intro = () => {
         <span>About</span>
       </div>
       <div className="buttons">
-        <button>HIRE ME</button>
+        <Link to={`/contact`}>
+          <button>HIRE ME</button>
+        </Link>
       </div>
     </div>
   );
