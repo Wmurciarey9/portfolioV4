@@ -17,12 +17,10 @@ export const Project = (props) => {
 
         <div className="buttons">
           <button>
-            <a href={props.liveUrl}></a>
-            See Live
+            <a href={props.liveUrl}>See Live</a>
           </button>
           <button>
-            <a href={props.gitHub}></a>
-            Source Code
+            <a href={props.gitHub}>Source Code</a>
           </button>
         </div>
       </div>
