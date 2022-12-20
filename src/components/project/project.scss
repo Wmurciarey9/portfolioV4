@@ -76,6 +76,10 @@
         &:hover {
           scale: 1.2;
         }
+        a {
+          text-decoration: none;
+          color: white;
+        }
 
         @include mobile {
           display: flex;
