@@ -19,7 +19,7 @@ export const Projects = () => {
         techFour="CSS"
       />
       <Project
-        title="Eccommerce Store"
+        title="Ecommerce Store"
         img={Ecommerce}
         liveUrl=""
         gitHub=""
