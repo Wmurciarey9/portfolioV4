@@ -1,6 +1,7 @@
 import React from "react";
 import { Project } from "../project/Project";
 import "./projects.scss";
+import Ecommerce from "../images/eCommerce.png";
 
 export const Projects = () => {
   return (
@@ -19,13 +20,10 @@ export const Projects = () => {
       />
       <Project
         title="Eccommerce Store"
-        img="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmV0ZmxpeHxlbnwwfHwwfHw%3D&w=1000&q=80"
+        img={Ecommerce}
         liveUrl=""
         gitHub=""
-        description="****IN PROGRESS**** Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-      been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-      galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text
-      of the printing and typesetting industry."
+        description="Completely functional eCommerce store website. In this case I set up a wallet store. New items can be added throught the admin site if you are registered as an admin. It also manages cart updates and processes payments."
         techOne="React"
         techTwo="Saas"
         techThree="MongoDB"
